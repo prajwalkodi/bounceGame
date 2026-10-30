@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bounce Ping Pong</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="scoreboard">
+      <div class="player">
+        <span class="label">You</span>
+        <span id="playerScore" class="score">0</span>
+      </div>
+      <div class="center-info">
+        <span id="status">First to 7 wins</span>
+      </div>
+      <div class="player">
+        <span class="label">CPU</span>
+        <span id="cpuScore" class="score">0</span>
+      </div>
+    </header>
+
+    <canvas id="game" width="800" height="500"></canvas>
+
+    <p class="controls">
+      Move: <kbd>W</kbd>/<kbd>S</kbd> or <kbd>↑</kbd>/<kbd>↓</kbd>, or use the mouse or touch ·
+      <kbd>Space</kbd> start / pause · <kbd>R</kbd> restart
+    </p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
